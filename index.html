@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,10 +10,18 @@
 		<h1>Calculadora de Ana Belén Alloza Subías </h1>
 		Number:
 		<input type="text" id="n1">
+
 		<p>
+
+			<button onclick="square()">x^2 </button>
 			<button onclick="cube()">X^3 </button>
+
 		</p>
 		<script type="text/javascrit">
+			function square() {
+				var num = document.getElementById("n1");
+
+				num.value = Math.pow(num.value, 2);
 			function cube() {
 				var num = document.getElementById("n1");
 				num.value = Math.pow(num.value, 3);
