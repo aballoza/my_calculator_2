@@ -13,19 +13,28 @@
 
 		<p>
 
+			<button onclick="inverse()"> 1//X </button>
 			<button onclick="square()">x^2 </button>
 			<button onclick="cube()">X^3 </button>
 
 		</p>
 		<script type="text/javascrit">
+			
 			function square() {
 				var num = document.getElementById("n1");
 
 				num.value = Math.pow(num.value, 2);
+					}
+
 			function cube() {
 				var num = document.getElementById("n1");
 				num.value = Math.pow(num.value, 3);
 			}
+			
+			function inverse() {
+				var num = document.getElementById("n1");
+				num.value = 1/num.value;
+
 		</script>
 	</body>
 </html>
