@@ -10,16 +10,14 @@
 		<h1>Calculadora de Ana Belén Alloza Subías </h1>
 		Number:
 		<input type="text" id="n1">
-
+	
 		<p>
 
 			<button onclick="inverse()"> 1//X </button>
 			<button onclick="square()">x^2 </button>
 			<button onclick="cube()">X^3 </button>
-
-
-
 			<button onclick="power_4()">X^4 </button>
+			<button onclick="sine()">sin </button>
 
 		</p>
 		<script type="text/javascrit">
@@ -36,11 +34,10 @@
 
 			}
 
-			
-			function inverse() {
+			function inverse(){
 				var num = document.getElementById("n1");
 				num.value = 1/num.value;
-
+			}
 
 			function power_4() {
 				var num = document.getElementById("n2");
@@ -49,6 +46,12 @@
 			}
 
 			
+
+
+			function sine() {
+				var num = document.getElementById("n1");
+				num.value = Math.sin(num.value);
+				}
 
 		</script>
 	</body>
